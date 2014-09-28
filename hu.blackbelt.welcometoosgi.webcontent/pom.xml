@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>hu.blackbelt</groupId>
+		<artifactId>hu.blackbelt.welcometoosgi.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../hu.blackbelt.welcometoosgi.parent/pom.xml</relativePath>
+	</parent>
+
+	<packaging>bundle</packaging>
+
+	<artifactId>hu.blackbelt.welcometoosgi.webcontent</artifactId>
+	<name>Welcome to OSGi Web content</name>
+
+	<!-- Priority is low, it is the last bundle is scanned for content -->
+	<properties>
+		<webcontent.priority>1000</webcontent.priority>
+	</properties>
+
+ <build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-bundle-plugin</artifactId>
+				<extensions>true</extensions>
+				<inherited>true</inherited>
+				<configuration>
+					<instructions>
+						<Export-Package>
+							${project.artifactId}.*;version=${project.version}
+						</Export-Package>
+						<Include-Resource>
+							{maven-resources}
+						</Include-Resource>
+						<Web-Content>${webcontent.priority}</Web-Content>
+					</instructions>
+				</configuration>
+			</plugin>
+
+			<plugin>
+				<groupId>org.apache.sling</groupId>
+				<artifactId>maven-sling-plugin</artifactId>
+			</plugin>
+
+		</plugins>
+	</build>
+</project>

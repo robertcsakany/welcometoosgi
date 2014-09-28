@@ -1,0 +1,12 @@
+feature:install -v http
+feature:install -v apache-commons
+feature:install -v http-whiteboard
+feature:install -v scr
+bundle:install -s mvn:org.apache.sling/org.apache.sling.commons.osgi/2.2.0
+bundle:install -s mvn:org.apache.sling/org.apache.sling.commons.mime/2.1.4
+bundle:install -s mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.api/1.0.0-SNAPSHOT
+bundle:install -s mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.servlet/1.0.0-SNAPSHOT
+bundle:install -s mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.service/1.0.0-SNAPSHOT
+bundle:install -s mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.webcontentservlet/1.0.0-SNAPSHOT
+bundle:install -s mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.webcontent/1.0.0-SNAPSHOT
+

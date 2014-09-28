@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="blackbelt-${project.version}-welcometoosgi-servlet" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+	<feature name="blackbelt-welcometoosgi-servlet" version="${project.version}" description="Welcome to osgi servlet">
+		<feature>scr</feature>
+		<feature>http</feature>
+		<feature>http-whiteboard</feature>
+		<bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+	</feature>
+</features>

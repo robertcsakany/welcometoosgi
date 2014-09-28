@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<groupId>hu.blackbelt</groupId>
+	<artifactId>hu.blackbelt.welcometoosgi.reactor</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+	<name>Welcome to OSGi Reactor</name>
+	<modules>
+		<module>hu.blackbelt.welcometoosgi.parent</module>
+		<module>hu.blackbelt.welcometoosgi.api</module>
+		<module>hu.blackbelt.welcometoosgi.service</module>
+		<module>hu.blackbelt.welcometoosgi.servlet</module>
+		<module>hu.blackbelt.welcometoosgi.webcontentservlet</module>
+		<module>hu.blackbelt.welcometoosgi.webcontent</module>
+	</modules>
+</project>

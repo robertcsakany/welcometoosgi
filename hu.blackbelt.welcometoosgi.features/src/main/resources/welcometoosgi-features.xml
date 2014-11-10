@@ -6,7 +6,7 @@
 		<feature>apache-commons</feature>
 		<feature>http-whiteboard</feature>
 		<feature>scr</feature>
-		<bundle>mvn:org.apache.sling/org.apache.sling.commons.osgi/2.2.0</bundle>
+		<bundle dependency = "true">mvn:org.apache.sling/org.apache.sling.commons.osgi/2.2.0</bundle>
 		<bundle>mvn:org.apache.sling/org.apache.sling.commons.mime/2.1.4</bundle>
 	</feature>
 

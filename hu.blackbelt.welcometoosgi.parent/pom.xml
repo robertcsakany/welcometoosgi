@@ -11,7 +11,7 @@
 		<name>Welcome to OSGi Parent</name>
 		<url>http://www.blackbelt.hu/</url>
 	</organization>
-	<name>Blackbelt (Parent)</name>
+	<name>Welcome to OSGi Parent</name>
 	<description>The parent project for Blackbelt applications</description>
 	<inceptionYear>2014</inceptionYear>
 	<url>http://www.blackbelt.hu</url>
@@ -25,12 +25,6 @@
 		<karaf.version>3.0.0</karaf.version>
 		<cxf.version>2.7.10</cxf.version>
 	</properties>
-
- 	<scm>
-		<connection>scm:git:https://github.com/BlackBeltTechnology/blackbelt-base.git</connection>
-		<developerConnection>scm:git:https://github.com/BlackBeltTechnology/blackbelt-base.git</developerConnection>
-		<url>https://github.com/BlackBeltTechnology/blackbelt-base.git</url>
-	</scm>
 
 	<reporting>
 		<plugins>

@@ -14,5 +14,6 @@
 		<module>hu.blackbelt.welcometoosgi.servlet</module>
 		<module>hu.blackbelt.welcometoosgi.webcontentservlet</module>
 		<module>hu.blackbelt.welcometoosgi.webcontent</module>
+		<module>hu.blackbelt.welcometoosgi.features</module>
 	</modules>
 </project>

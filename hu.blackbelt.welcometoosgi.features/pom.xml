@@ -58,7 +58,7 @@
 						<configuration>
 							<artifacts>
 								<artifact>
-									<file>target/${feature-file}</file>
+									<file>${basedir}/target/${feature-file}</file>
 									<type>xml</type>
 									<classifier>features</classifier>
 								</artifact>
@@ -83,7 +83,7 @@
 						</goals>
 						<phase>package</phase>
 						<configuration>
-							<featuresFile>target/${feature-file}</featuresFile>
+							<featuresFile>${basedir}/target/${feature-file}</featuresFile>
 						</configuration>
 					</execution>
 				</executions>

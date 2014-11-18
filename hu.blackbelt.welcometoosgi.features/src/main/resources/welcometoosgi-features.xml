@@ -35,6 +35,32 @@
 		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.webcontent/1.0.0-SNAPSHOT</bundle>
 	</feature>
 
+	<feature name="blackbelt-welcometoosgi-config" description="BlackBelt Welcome To Osgi" version="${project.version}">
+		<feature>blackbelt-welcometoosgi</feature>
+		<config name="hu.blackbelt.welcometoosgi.service.WelcomeToOsgiImpl">
+			fooBar = Bar from feature
+		</config>
+	</feature>
+
+	<feature name="blackbelt-welcometoosgi-transaction-api" version="${project.version}" description="BlackBelt Welcome To OSGi Transaction API">
+		<feature>scr</feature>
+		<bundle>mvn:org.javassist/javassist/3.18.1-GA</bundle>
+		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.transaction.api/1.0.0-SNAPSHOT</bundle>
+	</feature>
+
+	<feature name="blackbelt-welcometoosgi-transaction-dummy" version="${project.version}" description="BlackBelt Welcome To OSGi  Dummy Transaction service">
+		<feature>scr</feature>
+		<feature>blackbelt-welcometoosgi-transaction-api</feature>
+		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.transaction.dummy/1.0.0-SNAPSHOT</bundle>
+	</feature>
+
+	<feature name="blackbelt-welcometoosgi-sample-transaction" version="${project.version}" description="BlackBelt Welcome To OSGi  Transaction sample service">
+		<feature>scr</feature>
+		<feature>blackbelt-welcometoosgi-transaction-api</feature>
+		<feature>blackbelt-welcometoosgi-transaction-dummy</feature>
+		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.sample.transaction/1.0.0-SNAPSHOT</bundle>
+	</feature>
+
 	<feature name="blackbelt-welcometoosgi" description="BlackBelt Welcome To Osgi" version="${project.version}">
 		<feature>blackbelt-welcometoosgi-base</feature>
 		<feature>blackbelt-welcometoosgi-api</feature>
@@ -42,12 +68,10 @@
 		<feature>blackbelt-welcometoosgi-servlet</feature>
 		<feature>blackbelt-welcometoosgi-webcontentservlet</feature>
 		<feature>blackbelt-welcometoosgi-webcontent</feature>
+		<feature>blackbelt-welcometoosgi-transaction-api</feature>
+		<feature>blackbelt-welcometoosgi-transaction-dummy</feature>
+		<feature>blackbelt-welcometoosgi-sample-transaction</feature>
+
 	</feature>
 
-	<feature name="blackbelt-welcometoosgi-config" description="BlackBelt Welcome To Osgi" version="${project.version}">
-		<feature>blackbelt-welcometoosgi</feature>
-		<config name="hu.blackbelt.welcometoosgi.service.WelcomeToOsgiImpl">
-			fooBar = Bar from feature
-		</config>
-	</feature>
 </features>

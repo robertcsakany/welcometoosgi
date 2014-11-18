@@ -14,6 +14,9 @@
 		<module>hu.blackbelt.welcometoosgi.servlet</module>
 		<module>hu.blackbelt.welcometoosgi.webcontentservlet</module>
 		<module>hu.blackbelt.welcometoosgi.webcontent</module>
+		<module>hu.blackbelt.welcometoosgi.transaction.api</module>
+		<module>hu.blackbelt.welcometoosgi.transaction.dummy</module>
+		<module>hu.blackbelt.welcometoosgi.sample.transaction</module>
 		<module>hu.blackbelt.welcometoosgi.features</module>
 	</modules>
 </project>

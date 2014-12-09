@@ -1,0 +1,9 @@
+.*
+rm .*
+!/.gitignore
+/target/
+/log/
+/sling/
+*.iml
+/lib
+.idea

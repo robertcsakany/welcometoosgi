@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<features name="blackbelt-${project.version}-welcometoosgi-eventproducer" xmlns="http://karaf.apache.org/xmlns/features/v1.0.0">
+	<feature name="blackbelt-welcometoosgi-eventproducer" version="${project.version}" description="Welcome To OSGi Event Producer">
+		<feature>scr</feature>
+		<bundle>mvn:${project.groupId}/${project.artifactId}/${project.version}</bundle>
+	</feature>
+</features>

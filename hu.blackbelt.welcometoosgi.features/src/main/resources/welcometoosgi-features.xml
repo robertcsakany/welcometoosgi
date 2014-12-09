@@ -12,7 +12,7 @@
 
 	<feature name="blackbelt-welcometoosgi-api" description="BlackBelt Welcome To Osgi API" version="${project.version}">
 		<feature>blackbelt-welcometoosgi-base</feature>
-		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.api/1.0.0-SNAPSHOT</bundle>
+		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.api/${project.version}</bundle>
 	</feature>
 
 	<feature name="blackbelt-welcometoosgi-servlet" description="BlackBelt Welcome To Osgi Servlet" version="${project.version}">
@@ -23,6 +23,16 @@
 	<feature name="blackbelt-welcometoosgi-service" description="BlackBelt Welcome To Osgi Service" version="${project.version}">
 		<feature>blackbelt-welcometoosgi-api</feature>
 		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.service/1.0.0-SNAPSHOT</bundle>
+	</feature>
+
+	<feature name="blackbelt-welcometoosgi-eventproducer" version="${project.version}" description="BlackBelt Welcome To OSGi Event Producer">
+		<feature>scr</feature>
+		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.eventproducer/1.0.0-SNAPSHOT</bundle>
+	</feature>
+
+	<feature name="blackbelt-welcometoosgi-eventconsumer" version="${project.version}" description="BlackBelt Welcome To OSGi Event Consumer">
+		<feature>scr</feature>
+		<bundle>mvn:hu.blackbelt/hu.blackbelt.welcometoosgi.eventconsumer/1.0.0-SNAPSHOT</bundle>
 	</feature>
 
 	<feature name="blackbelt-welcometoosgi-webcontentservlet" description="BlackBelt Welcome To Osgi Web Content Servlet" version="${project.version}">
@@ -65,6 +75,8 @@
 		<feature>blackbelt-welcometoosgi-base</feature>
 		<feature>blackbelt-welcometoosgi-api</feature>
 		<feature>blackbelt-welcometoosgi-service</feature>
+		<feature>blackbelt-welcometoosgi-eventproducer</feature>
+		<feature>blackbelt-welcometoosgi-eventconsumer</feature>
 		<feature>blackbelt-welcometoosgi-servlet</feature>
 		<feature>blackbelt-welcometoosgi-webcontentservlet</feature>
 		<feature>blackbelt-welcometoosgi-webcontent</feature>

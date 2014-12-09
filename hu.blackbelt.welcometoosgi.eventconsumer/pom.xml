@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/maven-v4_0_0.xsd">
+
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>hu.blackbelt</groupId>
+		<artifactId>hu.blackbelt.welcometoosgi.parent</artifactId>
+		<version>1.0.0-SNAPSHOT</version>
+		<relativePath>../hu.blackbelt.welcometoosgi.parent/pom.xml</relativePath>
+	</parent>
+	
+	 <name>Welcome to OSGi Event Consumer</name>
+    
+	<artifactId>hu.blackbelt.welcometoosgi.eventconsumer</artifactId>
+	<packaging>bundle</packaging>
+	<description>Welcome to OSGi event consumer</description>
+	<build>
+	    <plugins>
+			<plugin>
+				<groupId>org.apache.felix</groupId>
+				<artifactId>maven-scr-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>generate-scr-scrdescriptor</id>
+						<goals>
+							<goal>scr</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>		    <plugin>
+			    <groupId>org.apache.felix</groupId>
+			    <artifactId>maven-bundle-plugin</artifactId>
+			    <extensions>true</extensions>
+			    <configuration>
+			        <instructions>
+			            <Export-Package>
+			                ${project.artifactId}.*;version=${project.version}
+			            </Export-Package>
+			        </instructions>
+			    </configuration>
+			</plugin>
+	    </plugins>
+	</build>
+</project>

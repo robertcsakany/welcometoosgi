@@ -11,6 +11,8 @@
 		<module>hu.blackbelt.welcometoosgi.parent</module>
 		<module>hu.blackbelt.welcometoosgi.api</module>
 		<module>hu.blackbelt.welcometoosgi.service</module>
+		<module>hu.blackbelt.welcometoosgi.eventproducer</module>
+		<module>hu.blackbelt.welcometoosgi.eventconsumer</module>
 		<module>hu.blackbelt.welcometoosgi.servlet</module>
 		<module>hu.blackbelt.welcometoosgi.webcontentservlet</module>
 		<module>hu.blackbelt.welcometoosgi.webcontent</module>
